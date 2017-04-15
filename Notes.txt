@@ -1,0 +1,36 @@
+1.> Install virtualenv and virtualenvwrapper
+2.> Need to install Java // Scala related for spark
+3.> Install git and move to spark installation
+4.> Edit paths in bashrc file :: Lots of confusing configurations 
+5.> Initiating pyspark
+6.> RAM is the bottleneck ::: How do we fit larger sets of data ? 
+7.> So we arent talking simply of a local process here, since a local process will use the computation of a single machine, but a distributed process has access to the computational resources across a number of machines connected through a network 
+8.> This is scalable and cost effective . Fault tolerance as well 
+9.> Hadoop is a way to distribute very large files across multiple machines :: uses HDFS :: duplicates blocks
+10.> HDFS for distributing storage and Map-reduce is for distributing computing 
+11.> Latest technology in this space ... improves on the concept of distribution :: replaces MAPallows-reduce with DAG's and lazy evaluations
+12.> Tries to keep most of the data in memory after each transformation, as an alternative to Map-reduce which writes back into disk (slow slow). SPARK can also spill over to disk if the memory is filled.
+
+
+13.> Who are using Apache Spark ? : Pinterest, LinkedIn
+14.> Fault Tolerant, parallel operation, ability to use many data-sources
+15.> RDD: Concept of DAG helps in-memory data sharing . Faster , Cacheable
+16.> Actions : Collect , Count, First, Take
+17.> Transformations: filter, map, flatmap
+18.> RDD's in (key,value) ~ Offers Partitioning of data :
+	Reduce : Action :-> returns a single element 
+	ReduceByKey : -> returns pair rdds
+19.> Most of it is dependent on Lambda Expressions ---> Ad-Hoc Functions without the need of properly defining them. lambda expressions are very commonly used with Spark RDD's
+20.> The problem is with multiple spark context loading
+21.> We create a file and read it with spark ... spark turns the contents of the file into an RDD.
+
+
+22.> Understanding Flask-Blueprint and Flask-Logging
+23.> Was facing the problems of Java Heap Memory size , RAM-limit , Address already in use [port number]
+
+ 
+
+
+
+
+
